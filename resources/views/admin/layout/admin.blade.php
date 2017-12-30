@@ -14,6 +14,11 @@
     <meta name="apple-mobile-web-app-title" content="Amaze UI" />
     <link rel="stylesheet" href="/assets/css/amazeui.min.css"/>
     <link rel="stylesheet" href="/assets/css/admin.css">
+    @section('css')
+    <style rel="stylesheet">
+
+    </style>
+    @stop
 </head>
 <body>
 <!--[if lte IE 9]>

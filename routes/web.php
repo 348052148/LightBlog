@@ -13,9 +13,13 @@
 
 Route::get('/', "Font\HomeController@index");
 Route::get('/home', "Font\HomeController@index");
+Route::post('/search', "Font\HomeController@search");
+Route::post('/home/search', "Font\HomeController@search");
+Route::get('/home/search/{search_str}', "Font\HomeController@searchStr");
 
 
 Route::get('/article/{category_id}/{id}', "Font\ArticleController@index");
+Route::post('/article/comment/{id}', "Font\ArticleController@comment");
 
 Route::get('/list/{id}', "Font\ListController@index");
 
@@ -25,6 +29,7 @@ Auth::routes();
 
 Route::group(['middleware' => ['auth','user']], function () {
 
+    Route::get('/admin','Admin\indexController@home');
     Route::get('/admin/home','Admin\indexController@home');
     Route::get('/admin/logout', "Admin\indexController@logout");
 

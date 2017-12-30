@@ -13,7 +13,3 @@
 
     </div>
 @stop
-
-@section('script')
-
-@stop

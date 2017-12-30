@@ -1,5 +1,5 @@
 <div class="am-g">
-<form class="am-form" method="post" action="actionCreate">
+<form class="am-form" method="post" action="/admin/posts/actionCreate">
     <input type="hidden" name="_token" value="{{ csrf_token() }}">
     @if(isset($post))
         <input type="hidden" name="id" value="{{ $post['id'] }}">

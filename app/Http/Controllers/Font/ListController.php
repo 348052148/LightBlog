@@ -26,7 +26,4 @@ class ListController extends Controller{
         return view('font.list',['postsLst'=>$postsLst]);
     }
 
-    public function search(Request $request,$search_str){
-
-    }
 }

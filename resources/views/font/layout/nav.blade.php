@@ -1,3 +1,4 @@
+<div data-am-sticky="{animation: 'slide-top'}">
 <header style="margin-bottom: 0rem;" class="am-topbar">
     <h1 class="am-topbar-brand">
         <a href="/">云淡风轻</a>
@@ -16,12 +17,14 @@
 
         </ul>
 
-        <form class="am-topbar-form am-topbar-left am-form-inline am-topbar-right" role="search">
+        <form method="post" action="/search" class="am-topbar-form am-topbar-left am-form-inline am-topbar-right" role="search">
+            {{ csrf_field() }}
             <div class="am-form-group">
-                <input type="text" class="am-form-field am-input-sm" placeholder="搜索文章">
+                <input name="search_field" type="text" @if(isset($search_field)) value="{{$search_field}}" @endif class="am-form-field am-input-sm" placeholder="搜索文章">
             </div>
             <button type="submit" class="am-btn am-btn-default am-btn-sm">搜索</button>
         </form>
 
     </div>
 </header>
+</div>

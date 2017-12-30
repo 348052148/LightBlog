@@ -7,7 +7,6 @@
             <li><a href="/admin/comments"><span class="am-icon-commenting"></span> 评论</a></li>
             <li><a href="/admin/category"><span class="am-icon-ioxhost"></span> 类目</a></li>
             <li><a href="/admin/system"><span class="am-icon-cog"></span> 设置</a></li>
-            <li><a href="/admin/logout"><span class="am-icon-sign-out"></span> 注销</a></li>
         </ul>
 
         <div class="am-panel am-panel-default admin-sidebar-panel">

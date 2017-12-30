@@ -10,6 +10,7 @@
     <meta name="renderer" content="webkit">
     <meta http-equiv="Cache-Control" content="no-siteapp"/>
     <link rel="alternate icon" type="image/png" href="assets/i/favicon.png">
+    <link href="/assets/js/themes/default/css/umeditor.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href=" {{asset('assets/css/amazeui.min.css')}} "/>
     <style>
         @media only screen and (min-width: 1200px) {
@@ -77,15 +78,19 @@
 <!--[if lt IE 9]>
 <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
 <script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
-<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<script src="/assets/js/amazeui.ie8polyfill.min.js"></script>
 <![endif]-->
 
 <!--[if (gte IE 9)|!(IE)]><!-->
-<script src="assets/js/jquery.min.js"></script>
+<script src="/assets/js/jquery.min.js"></script>
 <!--<![endif]-->
-<script src="assets/js/amazeui.min.js"></script>
+<script src="/assets/js/amazeui.min.js"></script>
 
-@yield('script');
+<script src="/assets/js/umeditor.config.js"></script>
+<script src="/assets/js/umeditor.min.js"></script>
+
+
+@yield('script')
 
 </body>
 </html>

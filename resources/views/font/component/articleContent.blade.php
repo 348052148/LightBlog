@@ -11,4 +11,6 @@
         </div>
 
     </article>
+
+    @include('font.component.comment')
 </div>

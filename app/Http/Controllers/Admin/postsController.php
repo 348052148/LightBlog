@@ -33,7 +33,13 @@ class postsController extends Controller{
     }
 
     public function actionCreate(Request $request){
-        $post = new PostsModel();
+        $id = $request->get('id');
+        if(empty($id)){
+            $post = new PostsModel();
+        }else{
+            $post = PostsModel::find($id);
+        }
+
         $post->post_title = $request->get('post_title');
         $post->post_desc = $request->get('post_desc');
         $post->category_id = $request->get('category_id');
